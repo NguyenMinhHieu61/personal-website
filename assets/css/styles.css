@@ -26,6 +26,36 @@ a {
     top: 0;
     z-index: 1;
 }
+.btn {
+    position: relative;
+    border: none;
+    background: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    color: #777777;
+    margin-right: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.btn.active {
+    background: var(--primary-color);
+    color: #fff;
+}
+.btn.active::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    bottom: -2px;
+    left: 47%;
+    width: 6px;
+    height: 6px;
+    background: var(--primary-color);
+    transform: rotate(45deg);
+}
 /* ================= Header ================= */
 
 .header {
@@ -87,4 +117,74 @@ a {
     font-weight: 600;
     color: #fff;
     text-transform: uppercase;
+}
+/* ================= About ================= */
+.about {
+    background: #f8f8f8;
+}
+.about .body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 128px 0;
+    gap: 48px;
+}
+.about .social-block {
+    width: 46.7%;
+}
+.about .social-block .img {
+    width: 100%;
+}
+.about .content-block {
+    width: 47.5%;
+    margin-left: auto;
+    
+}
+.about .content-block .info {
+    padding: 24px 0;
+    display: none;
+}
+.about .content-block .info.active {
+    display: block;
+}
+.about .content-block .info .title {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1.4;
+}
+.about .content-block .info .desc {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #999999;
+}
+.about .stat {
+    width: 50%;
+    margin-top: 48px;
+}
+.about .stat .label {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
+.about .stat .label span {
+    font-weight: 500;
+    color: var(--primary-color);
+}
+.about .stat .progress {
+    margin-top: 10px;
+    width: 100%;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+.progress .progress-bar {
+    width: 30%;
+    height: 8px;
+    background: var(--primary-color);
+    border-radius: 1px;
+}
+.about .info h4 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.5;
 }
