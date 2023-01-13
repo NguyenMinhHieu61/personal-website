@@ -78,14 +78,14 @@ a {
     align-items: center;
     justify-content: center;
 }
-.header .nav .item {
+.header .nav-item {
     color: #fff;
     padding: 26px 25px;
     opacity: 0.7;
     font-size: 1.5rem;
 }
-.header .nav .item:hover,
-.header .nav .item.active {
+.header .nav-item:hover,
+.header .nav-item.active {
     opacity: 1;
     background: rgba(255, 255, 255, 0.3);
 }
@@ -125,9 +125,7 @@ a {
 .about .body {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 128px 0;
-    gap: 48px;
 }
 .about .social-block {
     width: 46.7%;
@@ -136,9 +134,11 @@ a {
     width: 100%;
 }
 .about .content-block {
-    width: 47.5%;
-    margin-left: auto;
+    width: 47.5%;   
     
+}
+.about .content-block .btn-cta {
+    margin-bottom: 150px;
 }
 .about .content-block .info {
     padding: 24px 0;
@@ -188,6 +188,7 @@ a {
     font-weight: 700;
     line-height: 1.5;
 }
+/* ================= Project ================= */
 
 .projects {
     background: #f8f8f8;
@@ -251,4 +252,81 @@ a {
     font-weight: 700;
     color: rgba(255, 255, 255, 0.7);
 
+}
+/* ================= Footer ================= */
+.footer .list {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+    gap: 450px;
+}
+.footer .item:last-child {
+    width: 36%;
+}
+.footer .logo {
+    color: #111111;
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+.footer .desc {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #999;
+    margin-top: 40px;
+}
+.footer .social {
+    margin-top: 30px;
+    margin-left: -5px;
+}
+.footer .btn-link {
+    padding: 11px 12px;
+    font-size: 1.4rem;
+    color: #fff;
+    background: var(--primary-color);
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.footer .btn-link:nth-last-child(2) {
+    padding: 13px 16px;
+
+}
+.footer .btn-link:last-child {
+    padding: 13px 15px;
+}
+.footer .head {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #111;
+    line-height: 1.5;
+}
+.footer .info {
+    margin-top: 40px;
+}
+.footer .info li {
+    display: flex;
+    gap: 25px;
+    color: #000000cc;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.footer .icon {
+    margin-top: 4px;
+}
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    background: #e9e9e9;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #999999;
+}
+.copyright i {
+    padding: 0 3px;
+}
+.copyright a {
+    padding-left: 3px;
+    color: var(--primary-color);
 }

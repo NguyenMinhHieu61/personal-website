@@ -7,35 +7,30 @@
     <title>Personal Web</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
-    <main style="height: 5000px;">
+    <main>
         <!-- Header -->
         <header class="header fixed">
             <div class="main-content">
                 <div class="body">
                     <!-- Logo -->
-                    <a href="#!" class="logo">Kn.Ford</a>
+                    <a href="#home" class="logo">Kn.Ford</a>
                     <!-- Nav -->
                     <div class="nav">
                         <ul>
                             <li>
-                                <a href="" class="item">Home</a>
+                                <a href="#home" class="nav-item">Home</a>
                             </li>
                             <li>
-                                <a href="" class="item active">About</a>
+                                <a href="#about" class="nav-item active">About</a>
                             </li>
                             <li>
-                                <a href="" class="item">Projects</a>
+                                <a href="#project" class="nav-item">Projects</a>
                             </li>
                             <li>
-                                <a href="" class="item">Pricing</a>
-                            </li>
-                            <li>
-                                <a href="" class="item">Blog</a>
-                            </li>
-                            <li>
-                                <a href="" class="item">Contact</a>
+                                <a href="#contact" class="nav-item">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -44,13 +39,13 @@
             </div>
         </header>
         <!-- Home -->
-        <div class="home">
+        <div id="home" class="home">
             <div class="main-content">
                 <div class="body">
                     <h1 class="heading">I am Nguyễn Minh Hiếu <br>I love to Develop
                     </h1>
                     <p class="desc">
-                        Tôi được sinh ra và lớn lên tại tại TP Tuy Hòa, tỉnh Phú Yên
+                        I was born and grew up in Tuy Hoa city, Phu Yen province
                     </p>
                     <div class="social">
                         <a href="https://www.facebook.com/profile.php?id=100009545894702" class="link">+ facebook</a>
@@ -61,7 +56,7 @@
             </div>
         </div>
         <!-- About -->
-        <div class="about">
+        <div id="about" class="about">
             <div class="main-content">
                 <div class="body">
                     <div class="social-block">
@@ -69,15 +64,15 @@
                     </div>
                     <div class="content-block">
                         <div class="btn-cta">
-                            <button class="btn">About Me</button>
-                            <button class="btn active">skill</button>
-                            <button class="btn ">experience</button>
+                            <button class="btn active">About Me</button>
+                            <button class="btn">skill</button>
+                            <button class="btn">experience</button>
                         </div>
                         <div class="info">
                             <h3 class="title">My Story</h3>
                             <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni odit in maiores iste illum. Optio dolor animi aspernatur earum nobis, itaque minima eius architecto soluta velit eos tempore amet modi?</p>
                         </div>
-                        <div class="info">
+                        <div class="info active">
                             <h3 class="title">Skills</h3>
                             <div class="stats">
                                 <div class="stat">
@@ -94,7 +89,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="info active">
+                        <div class="info">
                             <h4 >1 year self-taught HTML and CSS</h4>
                             <h4 >3 months self-taught Javascript</h4>
                         </div>
@@ -103,7 +98,7 @@
             </div>
         </div>
         <!-- Projects -->
-        <div class="projects">
+        <div id="project" class="projects">
             <div class="main-content">
                 <div class="body">
                     <div class="heading">My Project</div>
@@ -130,15 +125,72 @@
                 </div>
             </div>
         </div>
+        <footer id="contact" class="footer">
+            <div class="main-content">
+                <div class="list">
+                    <div class="item">
+                        <a href="#!" class="logo">Kn.Ford</a>
+                        <p class="desc">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        <div class="social">
+                            <a href="https://twitter.com/HiuNguy01218652" class="btn-link"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100009545894702" class="btn-link"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/minhhieu06103/" class="btn-link"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="head">Have a Questions?</div>
+                        <ul class="info">
+                            <li >
+                                <i class="fa-solid fa-map icon"></i>
+                                k123/171 Cù Chính Lan, Thanh Khê, Đà Nẵng</li>
+                            <li >
+                                <i class="fa-solid fa-phone icon"></i>
+                                +2 392 3929 210</li>
+                            <li>
+                                <i class="fa-solid fa-paper-plane icon"></i>
+                                nhieu0751@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="copyright">Copyright ©2023 All rights reserved | This template is made with 
+                 <i class="fa-solid fa-heart"></i>
+                by <a href="https://colorlib.com/">Colorlib</a></div>
+        </footer>
     </main>
-</body>
-<script>
-    function on() {
-  document.getElementsByClassName("overlay").style.display = "flex";
-}
+    
+    <script>
+        const $ = document.querySelector.bind(document)
+        const $$ = document.querySelectorAll.bind(document)
+        
 
-function off() {
-  document.getElementsByClassName("overlay").style.display = "none";
-}
-</script>
+        const btns = $$('.btn')
+        const infoes = $$('.info')
+        const navs = $$('.nav-item')
+
+
+        btns.forEach((btn, index) => {
+            const info = infoes[index]
+
+            btn.onclick = function () {
+                $('.btn.active').classList.remove('active')
+                $('.info.active').classList.remove('active')
+
+
+                this.classList.add('active')
+                info.classList.add('active')
+            }
+        });
+        
+        navs.forEach((nav, index) => {
+            nav.onclick = function () {
+                $('.nav-item.active').classList.remove('active')
+
+                this.classList.add('active')
+            }
+            
+        });
+    </script>
+</body>
 </html>
