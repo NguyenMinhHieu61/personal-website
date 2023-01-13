@@ -20,17 +20,17 @@
                     <!-- Nav -->
                     <div class="nav">
                         <ul>
-                            <li>
-                                <a href="#home" class="nav-item">Home</a>
+                            <li class="nav-home nav-item">
+                                <a href="#home">Home</a>
                             </li>
-                            <li>
-                                <a href="#about" class="nav-item active">About</a>
+                            <li class="nav-about nav-item">
+                                <a href="#about">About</a>
                             </li>
-                            <li>
-                                <a href="#project" class="nav-item">Projects</a>
+                            <li class="nav-project nav-item">
+                                <a href="#project">Projects</a>
                             </li>
-                            <li>
-                                <a href="#contact" class="nav-item">Contact</a>
+                            <li class="nav-footer nav-item">
+                                <a href="#footer">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -39,7 +39,7 @@
             </div>
         </header>
         <!-- Home -->
-        <div id="home" class="home">
+        <div id="home" class="home section">
             <div class="main-content">
                 <div class="body">
                     <h1 class="heading">I am Nguyễn Minh Hiếu <br>I love to Develop
@@ -56,7 +56,7 @@
             </div>
         </div>
         <!-- About -->
-        <div id="about" class="about">
+        <div id="about" class="about section">
             <div class="main-content">
                 <div class="body">
                     <div class="social-block">
@@ -98,7 +98,7 @@
             </div>
         </div>
         <!-- Projects -->
-        <div id="project" class="projects">
+        <div id="project" class="projects section">
             <div class="main-content">
                 <div class="body">
                     <div class="heading">My Project</div>
@@ -125,7 +125,8 @@
                 </div>
             </div>
         </div>
-        <footer id="contact" class="footer">
+        <!-- Footer -->
+        <footer id="footer" class="footer section">
             <div class="main-content">
                 <div class="list">
                     <div class="item">
@@ -165,11 +166,11 @@
         const $$ = document.querySelectorAll.bind(document)
         
 
+
         const btns = $$('.btn')
         const infoes = $$('.info')
-        const navs = $$('.nav-item')
-
-
+        const navLi = $$('.nav-item')
+        const sections = $$('.section')
         btns.forEach((btn, index) => {
             const info = infoes[index]
 
@@ -183,14 +184,9 @@
             }
         });
         
-        navs.forEach((nav, index) => {
-            nav.onclick = function () {
-                $('.nav-item.active').classList.remove('active')
 
-                this.classList.add('active')
-            }
-            
-        });
+        
+        
     </script>
 </body>
 </html>

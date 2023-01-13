@@ -3,6 +3,7 @@
 }
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 :root {
     --primary-color: #0779e4;
@@ -65,7 +66,6 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 0;
 }
 .header .logo {
     color: #fff;
@@ -79,10 +79,15 @@ a {
     justify-content: center;
 }
 .header .nav-item {
-    color: #fff;
-    padding: 26px 25px;
     opacity: 0.7;
     font-size: 1.5rem;
+    cursor: pointer;
+}
+.header .nav-item a {
+    display: block;
+    color: #fff;
+    padding: 26px 25px;
+
 }
 .header .nav-item:hover,
 .header .nav-item.active {
