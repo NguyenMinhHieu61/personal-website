@@ -35,11 +35,10 @@
                         </ul>
                     </div>
                 </div>
-                
             </div>
         </header>
         <!-- Home -->
-        <div id="home" class="home section">
+        <div id="home" class="home">
             <div class="main-content">
                 <div class="body">
                     <h1 class="heading">I am Nguyễn Minh Hiếu <br>I love to Develop
@@ -56,7 +55,7 @@
             </div>
         </div>
         <!-- About -->
-        <div id="about" class="about section">
+        <div id="about" class="about">
             <div class="main-content">
                 <div class="body">
                     <div class="social-block">
@@ -98,7 +97,7 @@
             </div>
         </div>
         <!-- Projects -->
-        <div id="project" class="projects section">
+        <div id="project" class="projects">
             <div class="main-content">
                 <div class="body">
                     <div class="heading">My Project</div>
@@ -126,7 +125,7 @@
             </div>
         </div>
         <!-- Footer -->
-        <footer id="footer" class="footer section">
+        <footer id="footer" class="footer">
             <div class="main-content">
                 <div class="list">
                     <div class="item">
@@ -153,40 +152,26 @@
                         </ul>
                     </div>
                 </div>
-                
             </div>
             <div class="copyright">Copyright ©2023 All rights reserved | This template is made with 
                  <i class="fa-solid fa-heart"></i>
                 by <a href="https://colorlib.com/">Colorlib</a></div>
         </footer>
     </main>
-    
     <script>
         const $ = document.querySelector.bind(document)
         const $$ = document.querySelectorAll.bind(document)
-        
-
-
         const btns = $$('.btn')
         const infoes = $$('.info')
-        const navLi = $$('.nav-item')
-        const sections = $$('.section')
         btns.forEach((btn, index) => {
             const info = infoes[index]
-
             btn.onclick = function () {
                 $('.btn.active').classList.remove('active')
                 $('.info.active').classList.remove('active')
-
-
                 this.classList.add('active')
                 info.classList.add('active')
             }
         });
-        
-
-        
-        
     </script>
 </body>
 </html>

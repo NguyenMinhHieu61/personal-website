@@ -39,9 +39,7 @@ a {
     margin-right: 10px;
     border-radius: 4px;
     cursor: pointer;
-
 }
-
 .btn.active {
     background: var(--primary-color);
     color: #fff;
@@ -58,7 +56,6 @@ a {
     transform: rotate(45deg);
 }
 /* ================= Header ================= */
-
 .header {
         background: linear-gradient(to right, #2c66e3,  #00d4ff);
 }
@@ -87,7 +84,6 @@ a {
     display: block;
     color: #fff;
     padding: 26px 25px;
-
 }
 .header .nav-item:hover,
 .header .nav-item.active {
@@ -140,7 +136,6 @@ a {
 }
 .about .content-block {
     width: 47.5%;   
-    
 }
 .about .content-block .btn-cta {
     margin-bottom: 150px;
@@ -194,7 +189,6 @@ a {
     line-height: 1.5;
 }
 /* ================= Project ================= */
-
 .projects {
     background: #f8f8f8;
     padding: 128px 0;
@@ -209,7 +203,6 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 .projects .item {
     width: 70%;
@@ -219,7 +212,6 @@ a {
 }
 .projects .img {
     width: 100%;
-
 }
 .projects .overlay {
     position: absolute;
@@ -256,7 +248,6 @@ a {
     margin-top: 12px;
     font-weight: 700;
     color: rgba(255, 255, 255, 0.7);
-
 }
 /* ================= Footer ================= */
 .footer .list {
@@ -293,7 +284,6 @@ a {
 }
 .footer .btn-link:nth-last-child(2) {
     padding: 13px 16px;
-
 }
 .footer .btn-link:last-child {
     padding: 13px 15px;
